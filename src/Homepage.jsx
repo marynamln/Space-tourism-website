@@ -1,14 +1,11 @@
 import { useState } from 'react'
 import './App.scss'
 import './styles/pages/_home.scss'
-import Header from './Header'
 
 function Homepage() {
 
   return (
-    <>
-      <Header />
-      
+    <>      
       <div className='homepage-main-section'>
         <div className='mn-sc-left'>
           <h5>So, you want to travel to</h5>
