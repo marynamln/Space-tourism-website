@@ -1,8 +1,14 @@
-import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import './App.scss'
 import './styles/pages/_home.scss'
 
 function Homepage() {
+
+  const navigate = useNavigate();
+
+  const handleExplore = () => {
+    navigate('/destination');
+  };
 
   return (
     <>      
@@ -18,7 +24,7 @@ function Homepage() {
         </div>
 
         <div className='mn-sc-right'>
-          <button className='explore-btn'>Explore</button>            
+          <button className='explore-btn' onClick={handleExplore}>Explore</button>            
         </div>
       </div>
     </>

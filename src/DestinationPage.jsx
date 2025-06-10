@@ -18,10 +18,10 @@ function DestinationPage() {
 
     return (
         <>
-            <div className='destination-main-section'>
-                <h5 className='destination-title'>01 <p>Pick your destination</p></h5>
+            <div className='page-main-section'>
+                <h5 className='page-title'>01 <p>Pick your destination</p></h5>
 
-                <div className='destination-items-section'>
+                <div className='items-section'>
                     <Destination item={activeItem} activePlanet={activePlanet} setActivePlanet={setActivePlanet} />
                 </div>
             </div>

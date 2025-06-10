@@ -1,25 +1,5 @@
 @import '../_variables.scss';
 
-.destination-main-section {
-    display: flex;
-    flex-direction: column;
-    padding: 48px 200px;
-    gap: 24px;
-}
-
-.destination-title {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: bold;
-}
-
-.destination-title p {
-    color: $color-white;
-    font-weight: normal;
-}
-
 .destination-item-section {
     display: flex;
     flex-direction: row;
@@ -142,7 +122,7 @@
 
 @media (max-width: 1024px) {
 
-    .destination-main-section {
+    .page-main-section {
         padding: 40px;
     }
 
@@ -176,17 +156,12 @@
 
 @media (max-width: 576px) {
 
-    .destination-main-section {
+    .page-main-section {
         padding: 16px;
     }
 
     .destination-item-section {
         margin: 0;
-    }
-
-    .destination-title {
-        gap: 12px;
-        justify-content: center;
     }
 
     .planet-img {
@@ -197,10 +172,6 @@
     .dest-tx-sc {
         padding: 0;
         gap: 24px;
-    }
-
-    .dest-pl-tx {
-        font-size: 16px;
     }
 
     .dest-info {

@@ -1,0 +1,133 @@
+@import '../_variables.scss';
+
+.crew-item-section {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.crew-left-sc {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.crew-tx-sc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.crew-role {
+    font-size: 32px;
+    font-family: $font-heading;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.crew-title {
+    font-size: 56px;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.crew-pl-tx {
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0;
+    color: $color-light-blue;
+    font-family: $font-body;
+    width: 90%;
+}
+
+.crew-nav-sc {
+    display: flex;
+}
+
+.crew-img-sc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.crew-img {
+    -webkit-mask-image: linear-gradient(to bottom, $color-dark-blue 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, $color-dark-blue 70%, transparent 100%);
+}
+
+.crew-nav-sc {
+    display: flex;
+    gap: 24px;
+}
+
+.crew-link {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: inline-block;
+}
+
+.crew-link.active {
+    background-color: $color-white;
+}
+
+.crew-link:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+
+    .page-main-section {
+        padding: 40px;
+        gap: 48px;
+    }
+
+    .crew-item-section {
+        flex-direction: column;
+    }
+
+    .crew-tx-sc {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .crew-nav-sc {
+        justify-content: center;
+    }
+
+    .crew-left-sc {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        gap: 48px;
+    }
+
+    .crew-img-sc {
+        width: 100%;
+    }
+
+    .crew-pl-tx {
+        margin: 0 auto
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .page-main-section {
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .crew-img {
+        width: 270px;
+        height: auto;
+    }
+
+}

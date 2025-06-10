@@ -45,3 +45,32 @@ h5 {
   line-height: 34px;
   white-space: nowrap;
 }
+
+.page-main-section {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 200px;
+  gap: 24px;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.page-title p {
+  color: $color-white;
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+
+  .page-title {
+    gap: 12px;
+    justify-content: center;
+  }
+  
+}
