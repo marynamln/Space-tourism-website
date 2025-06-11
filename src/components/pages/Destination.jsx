@@ -1,16 +1,58 @@
 import '../../App.scss'
 import '../../styles/pages/_destination.scss'
-
+import { useState, useRef } from 'react'
 
 function Destination({ item, activePlanet, setActivePlanet }) {
 
     const planetNames = ['Moon', 'Mars', 'Europa', 'Titan'];
 
+    const [touchStart, setTouchStart] = useState(0);
+        const [touchEnd, setTouchEnd] = useState(0);
+        const containerRef = useRef(null);
+    
+        const minSwipeDistance = 50;
+    
+        const handleTouchStart = (e) => {
+            setTouchEnd(0);
+            setTouchStart(e.targetTouches[0].clientX);
+        };
+    
+        const handleTouchMove = (e) => {
+            setTouchEnd(e.targetTouches[0].clientX);
+        };
+    
+        const handleTouchEnd = () => {
+            if (!touchStart || !touchEnd) return;
+            
+            const distance = touchStart - touchEnd;
+            const isLeftSwipe = distance > minSwipeDistance;
+            const isRightSwipe = distance < -minSwipeDistance;
+    
+            const currentIndex = planetNames.indexOf(activePlanet);
+    
+            if (isLeftSwipe && currentIndex < planetNames.length - 1) {
+                setActivePlanet(planetNames[currentIndex + 1]);
+            }
+    
+            if (isRightSwipe && currentIndex > 0) {
+                setActivePlanet(planetNames[currentIndex - 1]);
+            }
+        };
+
     if (!item) return null;
 
     return (
         <>
-        <div className='destination-item-section'>
+        <div className='destination-item-section'
+            ref={containerRef}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            style={{ 
+                touchAction: 'pan-y',
+                outline: 'none'
+            }}
+        >
             <div className='dest-img-sc'>
                 <img className='planet-img' src={item.images.webp} />
             </div>
