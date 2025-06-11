@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@import '../base/_variables.scss';
 
 .page-main-section {
   padding: 48px 0 48px 200px;
@@ -31,7 +31,7 @@
 }
 
 .tech-subhead {
-    color: rgb(255, 255, 255, 0.5);
+    color: $color-gray;
     text-transform: uppercase;
     font-size: 32px;
     font-family: $font-heading;
@@ -61,7 +61,7 @@
     height: 80px;
     color: $color-white;
     border-radius: 50%;
-    border: 0.5px solid rgb(255, 255, 255, 0.5);
+    border: 0.5px solid $color-gray;
     font-size: 32px;
     font-family: $font-heading;
 }

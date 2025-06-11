@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@import '../base/_variables.scss';
 
 .crew-item-section {
     display: flex;
@@ -26,7 +26,7 @@
     font-size: 32px;
     font-family: $font-heading;
     text-transform: uppercase;
-    color: rgb(255, 255, 255, 0.5);
+    color: $color-gray;
 }
 
 .crew-title {
@@ -69,7 +69,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: $color-gray;
     display: inline-block;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .crew-link:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $color-light-gray;
 }
 
 @media (max-width: 1024px) {

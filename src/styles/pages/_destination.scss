@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@import '../base/_variables.scss';
 
 .destination-item-section {
     display: flex;
@@ -105,7 +105,7 @@
 
 .dest-link:hover::after {
   transform: scaleX(1);
-  background: rgba(255, 255, 255, 0.5);
+  background: $color-gray;
 }
 
 .dest-link.active::after {

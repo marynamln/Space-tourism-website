@@ -1,42 +1,12 @@
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import './styles/base/_variables.scss';
+@import './styles/base/_reset.scss';
+@import './styles/base/_global.scss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@import './styles/components/_header.scss';
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import './styles/pages/_home.scss';
+@import './styles/pages/_crew.scss';
+@import './styles/pages/_destination.scss';
+@import './styles/pages/_technology.scss';
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}*/
-
-@import './styles/_variables.scss';
-
-// .page-bg {
-//   min-height: 100vh;
-//   // min-height: 100%;
-//   width: 100%;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-// }
-
-// .homepage-bg {
-//   background-image: url('./assets/home/background-home-desktop.jpg');
-// }
-
-// .destination-bg {
-//   background-image: url('./assets/destination/background-destination-desktop.jpg');
-// }
+@import './App.scss';
