@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import './App.scss'
-import './styles/components/_header.scss'
-import logo from './assets/shared/logo.svg'
-import burger from './assets/shared/icon-hamburger.svg'
-import close from './assets/shared/icon-close.svg'
+import '../../App.scss'
+import '../../styles/components/_header.scss'
+import logo from '../../assets/shared/logo.svg'
+import burger from '../../assets/shared/icon-hamburger.svg'
+import close from '../../assets/shared/icon-close.svg'
 
 function Header() {
 

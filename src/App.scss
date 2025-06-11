@@ -66,11 +66,20 @@ h5 {
   font-weight: normal;
 }
 
+@media (max-width: 1024px) {
+
+  .page-title {
+    font-size: 20px;
+  }
+
+}
+
 @media (max-width: 576px) {
 
   .page-title {
     gap: 12px;
+    font-size: 16px;
     justify-content: center;
   }
-  
+
 }

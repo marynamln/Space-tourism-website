@@ -142,6 +142,7 @@
 
     .dest-pl-tx {
         text-align: center;
+        font-size: 16px;
     }
 
     h5 {
@@ -150,6 +151,10 @@
 
     .dest-tx-sc {
         padding: 0;
+    }
+
+    .dest-title {
+        font-size: 80px;
     }
 
 }
@@ -182,6 +187,18 @@
     .info-item {
         justify-content: center;
         text-align: center;
+    }
+
+    .dest-title {
+        font-size: 56px;
+    }
+
+    .dest-pl-tx {
+        font-size: 15px;
+    }
+
+    .dest-nav-sc {
+        font-size: 14px;
     }
 
 }

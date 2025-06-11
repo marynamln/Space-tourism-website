@@ -1,0 +1,165 @@
+@import '../_variables.scss';
+
+.page-main-section {
+  padding: 48px 0 48px 200px;
+}
+
+.tech-item-section {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.tech-left-sc {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.tech-nav-sc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.tech-tx-sc {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+
+.tech-subhead {
+    color: rgb(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: $font-heading;
+}
+
+.tech-title {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 56px;
+    font-family: $font-heading;
+}
+
+.tech-description {
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0;
+    color: $color-light-blue;
+    font-family: $font-body;
+    width: 90%;
+}
+
+.tech-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    color: $color-white;
+    border-radius: 50%;
+    border: 0.5px solid rgb(255, 255, 255, 0.5);
+    font-size: 32px;
+    font-family: $font-heading;
+}
+
+.tech-link:hover {
+    border: 1px solid $color-white;
+}
+
+.tech-link.active {
+    color: $color-dark-blue;
+    background-color: $color-white;
+}
+
+@media (max-width: 1024px) {
+
+    .page-main-section {
+        padding: 40px;
+    }
+
+    .tech-item-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-left-sc {
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-nav-sc {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tech-tx-sc {
+        gap: 16px;
+    }
+
+    .tech-tx-sc p {
+        margin: 0 auto;
+    }
+
+    .tech-description {
+        text-align: center;
+    }
+
+    .tech-link {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    .tech-description {
+        font-size: 16px;
+    }
+
+    .tech-subhead {
+        font-size: 24px;
+    }
+
+    .tech-title {
+        font-size: 40px;
+    }
+
+    .tech-img-sc, .tech-img {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .page-main-section {
+        padding: 24px;
+    }
+
+    .tech-link {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .tech-description {
+        font-size: 15px;
+    }
+
+    .tech-subhead {
+        font-size: 18px;
+    }
+
+    .tech-title {
+        font-size: 24px;
+    }
+
+}

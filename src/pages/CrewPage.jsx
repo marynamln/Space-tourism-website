@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './App.scss'
-import './styles/pages/_crew.scss'
-import Crew from './Crew'
-import data from './data.json'
+import '../App.scss'
+import '../styles/pages/_crew.scss'
+import Crew from '../components/pages/Crew'
+import data from '../data.json'
 
 function CrewPage() {
 

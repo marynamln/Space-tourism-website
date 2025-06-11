@@ -85,12 +85,21 @@
     .header-line {
         display: none;
     }
+
+    h5 {
+        font-size: 28px;
+    }
+
+    .hp-text {
+        font-size: 16px;
+        width: 80%;
+    }
 }
 
 @media (max-width: 576px) {
 
     h1 {
-        font-size: 100px;
+        font-size: 80px;
     }
 
     h5 {
@@ -102,9 +111,13 @@
     }
 
     .explore-btn {
-        width: 200px;
-        height: 200px;
-        font-size: 28px;
+        width: 144px;
+        height: 144px;
+        font-size: 18px;
+    }
+
+    .hp-text {
+        font-size: 15px;
     }
 
 }

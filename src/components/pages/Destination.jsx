@@ -1,5 +1,5 @@
-import './App.scss'
-import './styles/pages/_destination.scss'
+import '../../App.scss'
+import '../../styles/pages/_destination.scss'
 
 
 function Destination({ item, activePlanet, setActivePlanet }) {

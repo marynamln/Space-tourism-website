@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import './App.scss'
-import Header from './Header'
-import Homepage from './Homepage'
-import DestinationPage from './DestinationPage'
-import CrewPage from './CrewPage'
+import Header from './components/layout/Header'
+import Homepage from './pages/Homepage'
+import DestinationPage from './pages/DestinationPage'
+import CrewPage from './pages/CrewPage'
+import TechnologyPage from './pages/TechnologyPage'
 
 import homeBg from './assets/home/background-home-desktop.jpg';
 import destinationBg from './assets/destination/background-destination-desktop.jpg';
@@ -101,6 +102,7 @@ function App() {
         <Route path="/home" element={<Homepage/>} />
         <Route path="/destination" element={<DestinationPage/>} />
         <Route path="/crew" element={<CrewPage/>} />
+        <Route path='/technology' element={<TechnologyPage/>} />
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>

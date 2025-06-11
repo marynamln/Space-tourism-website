@@ -1,5 +1,5 @@
-import './App.scss'
-import './styles/pages/_crew.scss'
+import '../../App.scss'
+import '../../styles/pages/_crew.scss'
 
 
 function Crew({ item, activeCrew, setActiveCrew }) {

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import './App.scss'
-import './styles/pages/_home.scss'
+import '../App.scss'
+import '../styles/pages/_home.scss'
 
 function Homepage() {
 

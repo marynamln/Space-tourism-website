@@ -113,7 +113,16 @@
     }
 
     .crew-pl-tx {
-        margin: 0 auto
+        margin: 0 auto;
+        font-size: 16px;
+    }
+
+    .crew-role {
+        font-size: 24px;
+    }
+
+    .crew-title {
+        font-size: 40px;
     }
 
 }
@@ -128,6 +137,22 @@
     .crew-img {
         width: 270px;
         height: auto;
+    }
+
+    .crew-title {
+        font-size: 24px;
+    }
+
+    .crew-role {
+        font-size: 18px;
+    }
+
+    .crew-pl-tx {
+        font-size: 15px;
+    }
+
+    .page-title {
+        font-size: 16px;
     }
 
 }

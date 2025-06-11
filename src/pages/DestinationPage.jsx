@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import './App.scss'
-import './styles/pages/_destination.scss'
-import Destination from './Destination'
-import data from './data.json'
+import '../App.scss'
+import '../styles/pages/_destination.scss'
+import Destination from '../components/pages/Destination'
+import data from '../data.json'
 
 function DestinationPage() {
 
